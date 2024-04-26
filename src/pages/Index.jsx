@@ -1,5 +1,4 @@
-import { Box, Flex, Text, VStack, Image, Link, Button } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { Box, Flex, Text, VStack, Image } from '@chakra-ui/react';
 
 const Index = () => {
   return (
@@ -19,24 +18,11 @@ const Index = () => {
       </Box>
       <Box p={5} shadow='md' borderWidth='1px' flex='1' borderRadius='md'>
         <Text fontSize='2xl' fontWeight='bold'>Contact</Text>
-        <Flex align='center' mt={4}>
-          <Link href='https://github.com/andrewjohnson' isExternal>
-            <Button leftIcon={<FaGithub />} colorScheme='teal' variant='solid'>
-              GitHub
-            </Button>
-          </Link>
-          <Link href='https://linkedin.com/in/andrewjohnson' isExternal ml={2}>
-            <Button leftIcon={<FaLinkedin />} colorScheme='blue' variant='solid'>
-              LinkedIn
-            </Button>
-          </Link>
-          <Link href='mailto:andrew.johnson@example.com' ml={2}>
-            <Button leftIcon={<FaEnvelope />} colorScheme='red' variant='solid'>
-              Email
-            </Button>
-          </Link>
-        </Flex>
+        <Text mt={4}>For inquiries, please contact the historical archives.</Text>
       </Box>
+      <Text fontSize="md" mt={6} textAlign="center">
+        This page is dedicated to the historical presidency of Andrew Johnson.
+      </Text>
     </VStack>
   );
 };
